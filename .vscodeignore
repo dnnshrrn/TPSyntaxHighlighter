@@ -1,3 +1,6 @@
 .git/
 colors/
 examples/
+.vscode/**
+.vscode-test/**
+*.vsix

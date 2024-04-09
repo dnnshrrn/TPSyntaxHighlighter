@@ -2,14 +2,14 @@
 	"name": "fanuctplanguage",
 	"displayName": "Fanuc TP Language",
 	"description": "Fanuc Robotics TP language syntax highlighter",
-	"version": "0.10.0",
+	"version": "0.11.0",
 	"publisher": "alekskrnjaic",
 	"repository": "https://github.com/alek5k/TPSyntaxHighlighter",
 	"engines": {
 		"vscode": "*"
 	},
 	"categories": [
-		"Languages",
+		"Programming Languages",
 		"Formatters"
 	],
 	"keywords": [
@@ -34,7 +34,7 @@
 			{
 				"language": "fanuctp",
 				"scopeName": "source.fanuctp",
-				"path": "./syntaxes/fanuctp.tmLanguage"
+				"path": "./syntaxes/fanuctp.tmLanguage.json"
 			}
 		]
 	}

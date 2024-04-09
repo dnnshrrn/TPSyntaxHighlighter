@@ -46,6 +46,8 @@ CONTROL_CODE            = 00000000 00000000;
    : FORCE CTRL[2:JIG];
    : MESSAGE[A user message];
    : UALM[3];
-
+   : -- multiline 
+   : comment;
 /POS
 /END
+
