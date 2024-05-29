@@ -8,7 +8,7 @@
   "uuid": "E07EC438-7B75-4437-8AA1-DB94AABBAAAA",
   "patterns": [
     {
-      "match": "(\\/PROG).*\\n",
+      "match": "(\\/PROG|\\/MN|\\/POS).*\\n",
       "name": "support.class"
     },
     {
@@ -99,6 +99,14 @@
     {
       "match": "(?<=:)\\s*(MESSAGE|UALM)\\[.*\\]\\s*(?=;)",
       "name": "support.function"
-    }
+    },
+     {
+      "match": "(UFRAME_NUM|UTOOL_NUM|OVERRIDE)[=]{1}\\d+",
+      "name": "support.function"
+    },
+    {
+      "match": "(PAYLOAD)\\[.*?\\]\\]*",
+      "name": "support.function"
+    },
   ]
 }
