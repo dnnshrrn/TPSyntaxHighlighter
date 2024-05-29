@@ -100,13 +100,13 @@
       "match": "(?<=:)\\s*(MESSAGE|UALM)\\[.*\\]\\s*(?=;)",
       "name": "support.function"
     },
-     {
+    {
       "match": "(UFRAME_NUM|UTOOL_NUM|OVERRIDE)[=]{1}\\d+",
       "name": "support.function"
     },
     {
       "match": "(PAYLOAD)\\[.*?\\]\\]*",
       "name": "support.function"
-    },
+    }
   ]
 }
