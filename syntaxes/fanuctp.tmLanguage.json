@@ -8,23 +8,23 @@
   "uuid": "E07EC438-7B75-4437-8AA1-DB94AABBAAAA",
   "patterns": [
     {
-      "match": "(\\/PROG).*\\n",
+      "match": "(\\/PROG|\\/MN|\\/POS).*\\n",
       "name": "support.class"
     },
     {
-      "match": "P?V?A?S?R\\[.*?\\]\\]*",
+      "match": "P?V?A?S?R\\[.*?\\:\\]*",
       "name": "support.variable"
     },
     {
-      "match": "D?R?A?G?U?S?(I|O)\\[.*?\\]\\]*",
+      "match": "D?R?A?G?U?S?(I|O)\\[.*?\\:\\]*",
       "name": "support.variable"
     },
     {
-      "match": "P?F?\\[.*?\\]\\]*",
+      "match": "P?F?\\[.*?\\:\\]*",
       "name": "support.variable"
     },
     {
-      "match": "(TIMER)\\[.*?\\]\\]*",
+      "match": "(TIMER)\\[.*?\\:\\]*",
       "name": "keyword.control"
     },
     {
@@ -85,8 +85,8 @@
       "name": "keyword.control"
     },
     {
-      "match": "(JMP\\s*)?LBL\\[.+\\](?=;)",
-      "name": "keyword.control"
+      "match": "(JMP\\s*)?LBL\\[.+",
+      "name": "string.regexp"
     },
     {
       "match": "(?<=:)\\s*(WAIT|VISION(\\s*)(\\S*)|FORCE(\\s*)(\\S*))",
@@ -99,6 +99,18 @@
     {
       "match": "(?<=:)\\s*(MESSAGE|UALM)\\[.*\\]\\s*(?=;)",
       "name": "support.function"
+    },
+    {
+      "match": "(UFRAME_NUM|UTOOL_NUM|OVERRIDE)[=]{1}\\d+",
+      "name": "support.function"
+    },
+    {
+      "match": "(PAYLOAD)\\[.*?\\]\\]*",
+      "name": "support.function"
+    },
+    {
+      "match": "(?<=\\[.*:)[^\\]]+",
+      "name": "variable.language"
     }
   ]
 }
